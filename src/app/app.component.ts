@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: '',
 })
 export class AppComponent {
-  title = 'string-literal-a';
+  @Output() 'did-finish-load-one' = new EventEmitter();
+  @Output() didFinishLoadTwo = new EventEmitter();
 }
